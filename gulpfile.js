@@ -1,5 +1,7 @@
 'use strict';
 
+const StartPage = "index";
+
 // Получение настроек папок из package.json
 const pjson = require('./package.json');
 const dirs = pjson.config.directories;
@@ -33,6 +35,7 @@ const replace = require('gulp-replace');
 const ghPages = require('gulp-gh-pages');
 const size = require('gulp-size');
 const fs = require('fs');
+
 
 // Запуск `NODE_ENV=production npm start [задача]` приведет к сборке без sourcemaps
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
@@ -287,7 +290,7 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({
     server: dirs.build,
     port: port,
-    startPath: 'blocks_library.html'
+    startPath: StartPage+'.html'
   });
   gulp.watch([
     dirs.source + '/*.html',
