@@ -1,0 +1,69 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/rest-type-switcher/rest-type-switcher.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.rest-type-switcher__type-inner{
+  .clearfix();
+  min-height: 427px;
+ .container();
+}
+
+.rest-type-switcher__type-item{
+  background-image: url(../img/slider.jpg);
+}
+#rest-coany{
+  display: none;
+}
+.rest-type-switcher__tab{
+  .container();
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.rest-type-switcher__tab-item--active{
+  color: @light-orange;
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.rest-type-switcher__tab-item{
+  color: @gray;
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.rest-type-switcher__tab-item:hover{
+  color: @light-orange;
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.rest-type-switcher__options{
+  display: flex;
+  // background-image: url(../../img/bgr-under-health.jpg);
+}
+.rest-type-switcher__options-inner{
+  .container();
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/bgr-under-health.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  min-height: 400px;
+}
+.rest-type-switcher__options-item{
+  display: flex;
+  justify-content: center;
+}
+.rest-type-switcher__options-title{
+  justify-content: center;
+  
+}
+.rest-type-switcher__options-list{
+  display: inline-flex;
+}
+.rest-type-switcher__options{
+  justify-content: space-between;
+  margin-left: 10px;
+}
