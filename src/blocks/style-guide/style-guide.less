@@ -1,0 +1,200 @@
+// STYLE GUIDE
+.block{
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  &.light-orange{
+    background-color: @light-orange;
+  }
+  &.dark-orange{
+    background-color: @dark-orange;
+  }
+  &.light-green{
+    background-color: @light-green;
+  }
+  &.dark-green{
+    background-color: @dark-green;
+  }
+  &.black{
+    background-color: @black;
+  }
+  &.dark-gray{
+    background-color: @dark-gray;
+  }
+  &.gray{
+    background-color: @gray;
+  }
+  &.light-gray{
+    background-color: @light-gray;
+  }
+  &.white{
+    background-color: @white;
+  }
+}
+.comment{
+  color: @gray;
+  // display: flex;
+  .make-xs-column(3);
+}
+.typography{
+  display: flex;
+}
+.title{
+  padding-right: 30px;
+  color: @gray;
+  font-weight: 500;
+}
+li{
+  display: inline-block;
+}
+.logo-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container-fluid{
+  background-color: @white;
+
+}
+.buttons{
+  display: inline-flex;
+}
+
+// Main colors
+@light-orange: #ff7435;
+@dark-orange: #e85715;
+@light-green: #0ab89d;
+@dark-green: #079b84;
+
+// Shades of gray
+@black: #191919;
+@dark-gray: #4c4c4c;
+@gray: #979696;
+@light-gray: #ebebeb;
+@white: #fafafa;
+
+// Typigraphy
+@font-family: Fira Sans;
+@text-color: @black;
+h1{
+  color: @black;
+  font-size: 36px;
+  font-family: "pt serif caption";
+}
+h2 {
+  color: @black;
+  font-size: 30px;
+  font-family: "pt serif caption";
+}
+h3{
+  color: @black;
+  font-size: 14px;
+}
+.accent{
+  color: @black;
+  font-size: 18px;
+}
+p{
+  color: @black;
+  font-size: 16px;
+}
+.small{
+  color: @black;
+  font-size: 14px;
+}
+
+// Menu
+.main-nav__link{
+  color: @black;
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.main-nav__link--active{
+  color: @light-orange;
+}
+.main-nav__link:hover{ 
+  color: @light-orange;
+  font-size: 14px;
+}
+
+// Buttons & Links
+.btn--orange {
+  background-color: @light-orange;
+  color: @white;
+  font-size: 14px;
+  font-family: Fira Sans;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 12px 20px 12px 20px;
+}
+.btn--orange:hover{
+  background-color: @dark-orange;
+  color: @white;
+  font-size: 14px;
+}
+.btn--orange-ico{
+  background-color: @light-orange;
+  color: @white;
+  font-size: 14px;
+  font-family: Fira Sans;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 10px 22px 10px 37px;
+  position: relative;
+  display: inline-block;
+}
+.btn--orange-ico:hover{
+  background-color: @dark-orange;
+  color: @white;
+  font-size: 14px;
+}
+.btn--orange-ico:before{
+  content: "";
+  background-image: url(../img/calend-ico.png);
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  left: 15px;
+  bottom: 12px;
+}
+.btn--green{
+  background-color: @light-green;
+  color: @white;
+  padding: 19px 19px 19px 19px;
+}
+.btn--green:hover{
+  background-color: @dark-green;
+  color: @white;
+  padding: 19px 19px 19px 19px;
+}
+.btn--oval{
+  background-color: @light-green;
+  color: @white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  border: 2px solid @white;
+}
+.btn--oval:hover{
+  background-color: @white;
+  color: @light-green;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  border: 2px solid @white;
+}
+.btn--doted{
+  color: @black;
+  position: relative;
+  display: inline-block;
+}
+.btn--doted:after{ //чет не сообразить...
+  content: "";
+  position: absolute;
+  display: inline-block;
+}
+.btn--doted:hover{
+  color: @black;
+  text-decoration: none;
+}
