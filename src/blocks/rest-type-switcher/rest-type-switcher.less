@@ -8,8 +8,13 @@
   min-height: 427px;
  .container();
 }
-
+.rest-type-switcher__type-title{
+  @media(min-width: @screen-sm){
+    font-size: 18px;
+  }
+}
 .rest-type-switcher__type-text{
+  margin-top: 20px;
   background-color: white;
   opacity: 0.9;
   display: flex;
@@ -19,6 +24,11 @@
 
 .rest-type-switcher__type-item{
   background-image: url(../img/slider.jpg);
+  @media(min-width: @screen-sm){
+    max-height: 320px;
+    background-position-y: center;
+  }
+
 }
 #rest-coany{
   display: none;
@@ -46,10 +56,10 @@
   font-size: 14px;
   padding-left: 9px;
   padding-right: 9px;
+  text-decoration: none;
 }
 .rest-type-switcher__options{
   display: flex;
-  // background-image: url(../../img/bgr-under-health.jpg);
 }
 .rest-type-switcher__options-inner{
   .container();
@@ -58,20 +68,25 @@
   background-image: url(../img/bgr-under-health.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
-  min-height: 400px;
+  
+  @media(min-width: @screen-sm){
+  min-height: 360px;
+  }
 }
 .rest-type-switcher__options-item{
   display: flex;
   justify-content: center;
 }
-.rest-type-switcher__options-title{
-  justify-content: center;
-  
+.rest-type-switcher__options-wrap{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
 }
+
 .rest-type-switcher__options-list{
   display: inline-flex;
-}
-.rest-type-switcher__options{
-  justify-content: space-between;
-  margin-left: 10px;
+  @media(min-width: @screen-sm){
+  display: none;
+  }
 }
