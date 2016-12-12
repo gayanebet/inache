@@ -4,5 +4,59 @@
 
 
 .reviewes {
-  
+  background-image: url(../img/2-layers.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  @media(min-width: @screen-sm){
+  position: relative;
+  text-align: center;
+  }
+  &__title{
+    color: @white;
+    padding-top: 69px;
+    padding-bottom: 60px;
+
+  }
+  &__item {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    padding-top: 70px;
+    z-index: 1;
+    margin-bottom: 20px;
+
+    &-pic{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -41px;
+    }
+    &-name{
+      font-weight: 500;
+    }
+    &-ico--vk{
+      position: absolute;
+      content: "";
+      background-image: url(../../img/ic-vk.png);
+      height: 13px;
+      width: 22px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 96px;
+    }
+    &-text{
+      padding-top: 54px;
+    }
+    &-date{
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
+  }
+  &__btn{
+    display: inline-block;
+    z-index: 2;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 }

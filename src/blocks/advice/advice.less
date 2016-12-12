@@ -1,0 +1,35 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/advice/advice.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.advice {
+  &__promotion{
+
+    &--may{
+    background-image: url(../../img/weeretewrt-jpg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 299px;
+    padding-top: 158px;
+    }
+    &-wrap{
+      background-color: #fff;
+      opacity: 0.9;
+      max-width: 296px;
+      padding-left: 20px;
+    }
+    &-title{
+      color: @light-orange;
+      padding-top: 16px;
+    }
+    &-text{
+      padding-bottom: 20px;
+    }
+
+  }
+
+@media(min-width: @screen-sm){
+  }
+}
