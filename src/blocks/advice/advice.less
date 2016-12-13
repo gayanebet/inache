@@ -6,13 +6,14 @@
 .advice {
   &__promotion{
 
-    &--may{
+    &--may, &--july{
     background-image: url(../../img/weeretewrt-jpg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 299px;
     padding-top: 158px;
+    min-width: 320px;
     }
     &-wrap{
       background-color: #fff;
@@ -25,7 +26,10 @@
       padding-top: 16px;
     }
     &-text{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
+    }
+    &--july{
+      display: none;
     }
 
   }

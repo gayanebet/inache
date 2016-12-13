@@ -1,20 +1,24 @@
-<!--DEV
+<!-- DEV
 
 Нужно убрать пробел между @-ами:
 
 @ @include('blocks/destination-map/destination-map.html')
+ -->
 
--->
-<div class="destination-map"><!-- КАК ДО НАС ДОБРАТЬСЯ -->
-<div class="destination-map__title">Как до нас добраться</div>
-<div class="map"></div>
-<h2 class="destination-map__description-title">АВТОБУСЫ</h2>
-<p class="destination-map__description-text"> 
-  № 211 от станции метро «Черная речка» до остановки «Санаторий Репино» <br>
-  № 305К от станции метро «Старая деревня» <br>
-  № 680К от станции метро «Проспект Просвещения»<br>
-  № 400К от станции метро «Площадь Ленина»</p>
-<h2 class="destination-map__description-title">ЭЛЕКТРОПОЕЗД</h2>
-<p class="destination-map__description-text">Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга
+<div class="destination-map">
+<h1 class="destination-map__description-title">Как до нас добраться</h1>
+<!-- <div class="map">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=4jgwofVn4ABiA0JLYyHhsDqdVQfe4ORs&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+</div> -->
+<h2 class="destination-map__title destination-map__title--bus">АВТОБУСЫ</h2>
+
+  <ul class="destination-map__list"> 
+  <li class="destination-map__option"><div class="destination-map__list--bold">№ 211</div> от станции метро «Черная речка» до остановки «Санаторий Репино» </li>
+  <li class="destination-map__option"><div class="destination-map__list--bold">№ 305К</div> от станции метро «Старая деревня»</li> 
+  <li class="destination-map__option"><div class="destination-map__list--bold">№ 680К</div> от станции метро «Проспект Просвещения»</li>
+  <li class="destination-map__option"><div class="destination-map__list--bold">№ 400К</div> от станции метро «Площадь Ленина»</li>
+  </ul>
+<h2 class="destination-map__title destination-map__title--train">ЭЛЕКТРОПОЕЗД</h2>
+<p class="destination-map__text">Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга
 до платформы «Репино»</p>
-</div><!-- Как до нас добраться -->
+</div>
