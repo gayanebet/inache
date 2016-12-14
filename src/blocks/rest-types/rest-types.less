@@ -4,5 +4,55 @@
 
 
 .rest-types {
-  
+  background-image: url(../../img/rest-types__bgr.png);
+  text-align: center;
+  background-repeat: no-repeat;
+
+
+  &__title{
+    display: inline-block;
+    color: @white;
+    @media(min-width: @screen-sm){
+    max-width: 202px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    }
+  }
+  &__wrap{
+  display: flex;
+  justify-content: center;
+  }
+  &__item{
+    width: 280px;
+    // height: 337px;
+    background-color: @white;
+
+    &-img{
+    @media(min-width: @screen-sm){
+    width: 280px;
+    height: 200px;
+      img{
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      }
+    }
+    }
+    &-title{
+      font-size: 26px;
+      font-weight: 400;
+      margin-top: 40px;
+      margin-bottom: 13px;
+    }
+    &-price{
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 49px;
+      &--orange{
+        color: @light-orange;
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+  }
 }

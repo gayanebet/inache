@@ -6,7 +6,25 @@
 
 -->
 <div class="rest-types">
-  <h1 class="rest-types__title">Где вы хотите отдыхать?</h1>
-  <span class="rest-types__type"><p class="rest-types__type-description"></p></span>
-  <span class="rest-types__type"><p class="rest-types__type-description"></p></span>
+  <h1 class="rest-types__title">Где вы хотите отдохнуть?</h1>
+
+<!--FIRST-->
+
+
+
+@@include('blocks/rest-types__item/rest-types__item.html',{
+  "price":"4000",
+  "src":"../../../img/rest-types__cot.png",
+  "place":"В отеле"
+})
+
+<!--SECOND-->
+
+@@include('blocks/rest-types__item/rest-types__item.html',{
+  "price":"6800",
+  "src":"../../../img/rest-types__bed1.png",
+  "place":"В котедже"
+})
+
 </div>
+<!-- blocks/rest-types__item/ -->
