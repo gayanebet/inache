@@ -3,10 +3,15 @@
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
 .map{
-  padding-bottom: 90px;
+  
 }
 .destination-map{
   text-align: center;
+  &__wrap{
+    position: relative;
+        padding-left: 40px;
+    padding-right: 40px;
+  }
   &__description-title{
     padding-top: 74px;
     padding-bottom: 34px;
@@ -16,31 +21,43 @@
     font-weight: 400;
     font-size: 14px;
     padding-bottom: 18px;
-    position: relative;
-    // ох.....
-    &--bus{
+    padding-top: 90px;
+
+    &--bus:after{
       position: absolute;
       content: "";
       background-image: url(../../img/-----------1.png);
+      width: 50px;
+      height: 27px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 40px;
+
     }
-    &--train{
+    &--train:after{
       position: absolute;
       content: "";
       background-image: url(../../img/electro.png);
+      width: 58px;
+      height: 24px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 40px;
     }
   }
   &__option{
     display: block;
   }
   &__list{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 81px;
     &--bold{
       font-weight: 500;
       display: inline-block;
     }
-    
+  }
+  &__text{
+    padding-bottom: 55px;
   }
 }
 
