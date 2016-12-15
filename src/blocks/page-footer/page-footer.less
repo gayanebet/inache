@@ -4,5 +4,24 @@
 
 
 .page-footer {
-
+  &__address{
+    @media(min-width: @screen-sm){
+    display: none;
+    }
+  }
+  &__phone-link{
+    @media(min-width: @screen-sm){
+    display: none;
+    }
+  }
+  
+  &__ico{
+    display: flex;
+    justify-content: space-between;
+    &-wrap{
+      display: block;
+      margin: 0 auto;
+      width: 142px;
+    }
+  }
 }
