@@ -1,8 +1,39 @@
 // Для импорта в диспетчер подключений: @import './src/blocks/rooms-category__item/rooms-category__item.less';
 
 @import '../../less/variables.less';     // только для удобства обращения к переменным
+.rooms-category{
+  &__title{
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom: 30px;  
+  }
+    &__item {
+  background-color: @white;
+  border: 1px solid @light-gray;
+      &-title{
+        text-align: center;
+        font-size: 26px;  
+        font-weight: 400; 
+      }
+      &-price{
+        text-align: center; 
+        font-size: 14px;  
+        &--orange{
+          color: @light-orange;
+          font-weight: bold;  
+        }
+      }
+      &-pic{
 
+      }
+      &-pic img{
+        min-height: 300px;
 
-.rooms-category__item {
-  
+      }
+      &-text{
+        .container();
+      }
+  }
+
 }
+
