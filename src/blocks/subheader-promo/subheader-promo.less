@@ -1,0 +1,31 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/subheader-promo/subheader-promo.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.subheader-promo {
+  &__wrap{
+    margin: 0 auto;
+    vertical-align: center;
+  }
+
+  background-image: url(../../img/room-list__subheader.png);
+  height: 200px;
+  text-align: center;
+  background-position: center;
+    &__title{
+      display: inline-block;
+      color: @white;
+      @media(min-width: @screen-sm){
+      font-size: 30px;
+      padding-top: 60px;
+      max-width: 259px;
+      }
+    }
+    &__text{
+      @media(min-width: @screen-sm){
+      display: none;
+    }
+    }
+
+}
