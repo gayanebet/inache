@@ -10,10 +10,13 @@
     &__item {
   background-color: @white;
   border: 1px solid @light-gray;
+  margin-bottom: 50px;
       &-title{
         text-align: center;
         font-size: 26px;  
         font-weight: 400; 
+        margin-top: 40px;
+        margin-bottom: 10px;
       }
       &-price{
         text-align: center; 
@@ -24,16 +27,48 @@
         }
       }
       &-pic{
-
+        margin-top: 28px;
+        margin-bottom: 40px;
+        // position: relative;
+        @media(min-width: @screen-sm){
+          height: 224px;
+          width: 319px;
+          img{
+          height:100%;
+          width: 100%;
+          }
+        }
       }
-      &-pic img{
-        min-height: 300px;
-
-      }
+      
       &-text{
         .container();
+        margin-bottom: 53px;
       }
+      // with flex
+      &-btn{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+        &--orange{
+        margin-bottom: 38px;
+        }
+        &--doted{
+          margin-bottom: 37px;
+        }
+      }
+      
+
+      //without flex
+      // &-btn{
+      //   &--orange{
+      //   text-align: center;
+      //   margin-bottom: 38px;
+      //   }
+      //   &--doted{
+      //     text-align: center;
+      //     margin-bottom: 37px;
+      //   }
+      // }
   }
 
 }
-

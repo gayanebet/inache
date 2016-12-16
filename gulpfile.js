@@ -217,7 +217,8 @@ gulp.task('html', function() {
   return gulp.src(dirs.source + '/*.html')
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: '@file',
+      // basepath: '@file',
+      basepath: dirs.source,
       indent: true,
     }))
     .pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
