@@ -1,0 +1,18 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/subheader-booking/subheader-booking.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.subheader-booking {
+  &__title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  &__text{
+    .container;
+    text-align: center;
+  }
+  &__phone-link{
+    color: @light-orange;
+  }
+}

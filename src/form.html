@@ -3,50 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <title>Бронирование</title>
+  <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|PT+Serif+Caption" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__inner">    <!-- контейнер -->
+  @@include('blocks/page-header/page-header.html')
 
-      <a href="" class="main-logo"><img src="" alt=""></a>
-
-      <div class="main-nav">
-        <nav class="main-nav__nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="">НОМЕРА</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">КОТЕДЖ</a></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href=""></a>РЕСТОРАН</li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">ОТДЫХ</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
-        <span class="main-nav__toggler"></span>
+  @@include('blocks/subheader-booking/subheader-booking.html')
+  
+  <div class="form-step">
+    <h3>шаг 1</h3>
+    <h2>Дата отдыха</h2>
+    <div class="form-step__date">
+      <div class="form-step__from">
+        <h3 class="form-step__from">дата въезда</h3>
+        <input type="date"/>
       </div>
-
-      <div class="page-header__contacts">
-        <a href="tel:+78127775588" class="page-header__phone-link">+7 812 777-55-88</a>
-        <div class="page-header__address">г. Санкт-Петербург, ул. Малая морская</div>
+      <div class="form-step__to">
+        <h3 class="form-step__from">дата отъезда</h3>
+        <input type="date"/>
       </div>
-
-      <a href="#booking-form" class="btn btn--bg-orange btn--icon-calendar">ЗАБРОНИРОВАТЬ</a>
-
     </div>
-  </header>
-
-  <div class="subheader-booking">
-    <strong class="subheader-booking__title">Бронирование</strong>
-    <p class="subheader-booking__text">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+78127775588" class="subheader-booking__phone-link">+7 812 777-55-88</a></p>
   </div>
-  
-  
-  
-  <footer class="page-footer">
-    <span class="page-footer__address">Приморское шоссе <br> г. Санкт-Петербург</span>
-    <a href="" class="main-logo"><img src="" alt=""></a>
-    <a href="" class="page-footer__ico--vk"></a>
-    <a href="" class="page-footer__ico--fb"></a>
-    <a href="" class="page-footer__ico--inst"></a>
-    <a href="tel:+78127775588" class="page-footer__phone-link">+7 812 777-55-88</a>
-</footer>
+
+
+  <div class="form-step">
+    <h3>шаг 2</h3>
+    <h2>Место проживания</h2>
+    <div class="form-step__date">
+      <div class="form-step__from">
+        <h3 class="form-step__from">отлель</h3>
+        <input type="radio" name="" value="">
+      </div>
+      <div class="form-step__to">
+        <h3 class="form-step__from">котедж</h3>
+        <input type="radio" name="" value="" checked>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="form-step">
+    <h3>шаг 3</h3>
+    <h2>тип котеджа</h2>
+    <div class="form-step__date">
+      <div class="form-step__from">
+        <h3 class="form-step__from">флагман</h3>
+        <input type="radio" name="" value="" checked>
+      </div>
+      <div class="form-step__to">
+        <h3 class="form-step__from">озёрный</h3>
+        <input type="radio" name="" value="" >
+      </div>
+      <div class="form-step__from">
+        <h3 class="form-step__from">озёрка</h3>
+        <input type="radio" name="" value="">
+      </div>
+      <div class="form-step__from">
+        <h3 class="form-step__from">портовый</h3>
+        <input type="radio" name="" value="">
+      </div>
+    </div>
+
+    <div class="form-step__advantages">
+      <ul class="form-step__advantages-list">
+        <li>
+          <h3>плоащдь 100м</h3>
+        </li>
+        <li>
+          <h3>3 комнаты</h3>
+        </li>
+        <li>
+          <h3>5 спальных мест</h3>
+        </li>
+        <li>
+          <h3>Раздельный санузел</h3>
+        </li>
+        <li>
+          <h3>Wi-Fi</h3>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="form-step">
+    <h3>шаг 4</h3>
+    <h2>Персональная информация</h2>
+    <input type="text" placeholder="ИМЯ">
+    <input type="text" placeholder="ФАМИЛИЯ">
+    <input type="number" placeholder="НОМЕР ТЕЛЕФОНА">
+    <p class="form-comment">Мы свяжемся с вами в случае необходимоти</p>
+    
+
+    <input type="email" placeholder="ФАМИЛИЯ">
+    <p class="form-comment">На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
+  </div>
+
+  <div class="form-step">
+    <h3>шаг 5</h3>
+    <h2>Способ оплаты</h2>
+    <div class="form-step__price">
+      <h3>к оплате</h3>
+      <output name="price"></output>
+    </div>
+    <div class="form-step__pay">
+      <div class="form-step__pay-cash">
+        <input type="radio">
+        <h3>по приезду</h3>
+        <p>Вы можете произвести оплату по факту заселения.</p>
+
+      </div>
+      <div class="form-step__pay-card">
+        <input type="radio">
+        <h3>сейчас</h3>
+        <p>Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+        <form action="">
+          <h3>номер карты</h3>
+          <input type="number" placeholder="0000-0000-0000-0000">
+          <h3>код CVV</h3>
+          <input type="number" placeholder="123">
+          <h3>Фамилия владельца карты</h3>
+          <input type="number" placeholder="Vladimir Vladimirov">
+          <input type="number" placeholder="01/12">
+        </form>
+      </div>
+    </div>
+    
+  </div>
+
+
+  @@include('blocks/page-footer/page-footer.html')
+
 </body>
 </html>
