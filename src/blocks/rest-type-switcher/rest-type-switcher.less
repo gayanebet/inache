@@ -6,20 +6,46 @@
 .rest-type-switcher__type-inner{
   .clearfix();
   min-height: 427px;
- .container();
+
+ // .container();
 }
 .rest-type-switcher__type-title{
-  @media(min-width: @screen-sm){
-    font-size: 18px;
+  font-size: 18px;
+  background-color: white;
+  display: block;
+  opacity: 0.8;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  @media (min-width: @screen-md) {
+    display: inline;
+    font-size: 36px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 300;
+    // почему не работает марджин топ?
   }
 }
-.rest-type-switcher__type-text{
-  margin-top: 20px;
-  background-color: white;
-  opacity: 0.9;
-  display: flex;
+.br-promo{
+  display: none;
+  @media (min-width: @screen-md) {
+  display: block;
+  }
+}
+.rest-type-switcher__type-comment{
+  background-color: #fff;
+  opacity: 0.8;
   text-align: center;
-  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-width: @screen-md) {
+    display: inline;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px 0 5px 0;
+  }
 }
 
 .rest-type-switcher__type-item{
@@ -37,13 +63,25 @@
   .container();
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .rest-type-switcher__tab-item--active{
   color: @light-orange;
   font-size: 14px;
   padding-left: 9px;
   padding-right: 9px;
+  position: relative;
+}
+.rest-type-switcher__tab-item--active:before{
+      position: absolute;
+      content: "";
+      background-color: @light-orange;
+      height: 2px;
+      width: 30px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top:  20px;
 }
 .rest-type-switcher__tab-item{
   color: @gray;
@@ -59,11 +97,18 @@
   text-decoration: none;
 }
 .rest-type-switcher__options{
-  display: flex;
+  &-title{
+    padding-top: 58px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+  }
+
 }
 .rest-type-switcher__options-inner{
   .container();
-  display: flex;
+
   justify-content: center;
   background-image: url(../img/bgr-under-health.jpg);
   background-repeat: no-repeat;
@@ -74,19 +119,18 @@
   }
 }
 .rest-type-switcher__options-item{
-  display: flex;
   justify-content: center;
 }
 .rest-type-switcher__options-wrap{
-  display: flex;
-  flex-direction: column;
+
   text-align: center;
   margin-top: 20px;
 }
 
 .rest-type-switcher__options-list{
-  display: inline-flex;
-  @media(min-width: @screen-sm){
+
   display: none;
+  @media(min-width: @screen-md){
+    display: inline-block;
   }
 }
