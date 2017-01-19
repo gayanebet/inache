@@ -6,8 +6,11 @@
 .rest-type-switcher__type-inner{
   .clearfix();
   min-height: 427px;
+  @media(min-width: @screen-md){
+  .container();
+  padding-top: 20px;
+  }
 
- // .container();
 }
 .rest-type-switcher__type-title{
   font-size: 18px;
@@ -20,12 +23,14 @@
   padding-right: 20px;
   font-weight: 500;
   @media (min-width: @screen-md) {
+
     display: inline;
+    padding-left: 0;
     font-size: 36px;
     text-align: left;
     margin-top: 20px;
     font-weight: 300;
-    // почему не работает марджин топ?
+    
   }
 }
 .br-promo{
@@ -119,7 +124,7 @@
   }
 }
 .rest-type-switcher__options-item{
-  justify-content: center;
+  // justify-content: center;
 }
 .rest-type-switcher__options-wrap{
 
@@ -128,9 +133,8 @@
 }
 
 .rest-type-switcher__options-list{
-
-  display: none;
+  // display: none;
   @media(min-width: @screen-md){
-    display: inline-block;
+    // display: inline-sblock;
   }
 }

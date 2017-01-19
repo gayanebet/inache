@@ -9,7 +9,7 @@
   background-size: 200% 200%;
   background-position: center;
   text-align: center;
-  
+
   &__title{
     color: @white;
     padding-top: 50px;
@@ -24,6 +24,12 @@
     padding-top: 70px;
     z-index: 1;
     margin-bottom: 20px;
+    @media (min-width: @screen-md) {
+      width: 480px;
+      display: inline-block;
+      margin-top: 30px;
+
+    }
 
     &-pic{
       position: absolute;
