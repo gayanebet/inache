@@ -10,6 +10,7 @@
   .container();
   padding-top: 20px;
   }
+
 }
 .rest-type-switcher__type-title{
   font-size: 18px;
@@ -101,6 +102,7 @@
   text-decoration: none;
 }
 .rest-type-switcher__options{
+  
   &-title{
     padding-top: 58px;
     margin-bottom: 25px;
@@ -108,60 +110,78 @@
     padding-right: 30px;
     font-weight: 400;
   }
+  &-text{
+
+  max-width: 600px;
+  display: inline-block;
+  }
 
 }
 .rest-type-switcher__options-inner{
   .container();
-
+  
   justify-content: center;
   background-image: url(../img/bgr-under-health.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
   
   @media(min-width: @screen-sm){
-  min-height: 360px;
+  min-height: 330px;
   }
 }
 
 .rest-type-switcher__options-wrap{
   text-align: center;
   margin-top: 20px;
+  
 }
 
 .rest-type-switcher__options-list{
   display: none;
+
+
   @media(min-width: @screen-md){
   display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
   }
 }
-.rest-type-switcher__options-wrap{
-  position: relative;
+.rest-type-switcher__options-img{
+    background-image: url(../../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 5px;
 }
-.rest-type-switcher__options-item:after{
-  position: absolute;
-  content: "";
-  height: 80px;
+
+.rest-type-switcher__options-item-swim{
   width: 80px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top:  -90px;
+  height: 80px;
+  background-position: -185px -95px;
 }
-.rest-type-switcher__options-item-swim:after{
-  background-image: url(../../img/reviw__swim.png);
+.rest-type-switcher__options-item-football{
+    width: 80px;
+    height: 80px;
+    background-position: -95px -5px;
+    margin-left: 11px;
 }
-.rest-type-switcher__options-item-football:after{
-  background-image: url(../../img/reviw__football.png);
+.rest-type-switcher__options-item-billiards{
+    width: 80px;
+    height: 80px;
+    background-position: -5px -5px;
 }
-.rest-type-switcher__options-item-billiards:after{
-  background-image: url(../../img/reviw__billiards.png);
+.rest-type-switcher__options-item-spa{
+    width: 80px;
+    height: 80px;
+    background-position: -185px -5px;
 }
-.rest-type-switcher__options-item-spa:after{
-  background-image: url(../../img/reviw__spa.png);
+.rest-type-switcher__options-item-sauna{
+    width: 80px;
+    height: 79px;
+    background-position: -95px -95px;
 }
-.rest-type-switcher__options-item-sauna:after{
-  background-image: url(../../img/reviw__sauna.png);
-}
-.rest-type-switcher__options-item-fun:after{
-  background-image: url(../../img/reviw__spa.png);
+.rest-type-switcher__options-item-fun{
+    width: 80px;
+    height: 80px;
+    background-position: -5px -95px;
 }
