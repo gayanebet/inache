@@ -2,16 +2,34 @@
 
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
-
+.main-logo-footer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .page-footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media(min-width: @screen-md){
+    .container;
+    max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
   &__address{
-    @media(min-width: @screen-sm){
     display: none;
+    font-size: 14px;
+    @media(min-width: @screen-md){
+    display: block;
     }
   }
-  &__phone-link{
-    @media(min-width: @screen-sm){
+  &__phone-link, &__mail-link{
     display: none;
+    font-size: 14px;
+    @media(min-width: @screen-md){
+    display: block;
+    color: @black;
     }
   }
   

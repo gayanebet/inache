@@ -10,7 +10,6 @@
   .container();
   padding-top: 20px;
   }
-
 }
 .rest-type-switcher__type-title{
   font-size: 18px;
@@ -123,18 +122,46 @@
   min-height: 360px;
   }
 }
-.rest-type-switcher__options-item{
-  // justify-content: center;
-}
-.rest-type-switcher__options-wrap{
 
+.rest-type-switcher__options-wrap{
   text-align: center;
   margin-top: 20px;
 }
 
 .rest-type-switcher__options-list{
-  // display: none;
+  display: none;
   @media(min-width: @screen-md){
-    // display: inline-sblock;
+  display: flex;
   }
+}
+.rest-type-switcher__options-wrap{
+  position: relative;
+}
+.rest-type-switcher__options-item:after{
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top:  -90px;
+}
+.rest-type-switcher__options-item-swim:after{
+  background-image: url(../../img/reviw__swim.png);
+}
+.rest-type-switcher__options-item-football:after{
+  background-image: url(../../img/reviw__football.png);
+}
+.rest-type-switcher__options-item-billiards:after{
+  background-image: url(../../img/reviw__billiards.png);
+}
+.rest-type-switcher__options-item-spa:after{
+  background-image: url(../../img/reviw__spa.png);
+}
+.rest-type-switcher__options-item-sauna:after{
+  background-image: url(../../img/reviw__sauna.png);
+}
+.rest-type-switcher__options-item-fun:after{
+  background-image: url(../../img/reviw__spa.png);
 }
