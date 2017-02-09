@@ -14,10 +14,37 @@
 
   <div class="rooms-category">
     <h2 class="rooms-category__title">Категории</h2>
-    
-    @@include('blocks/rooms-category__item/rooms-category__item.html')
+    @@include('blocks/rooms-category__item/rooms-category__item.html',{
+      "price":"3400",
+      "class":"Эконом",
+      "src":"../../img/room-list__room1.png",
+      "description":"В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. <br>Часть номеров с видом на Финский залив. ",
+      "href":"#"
+      })
 
-    
+    @@include('blocks/rooms-category__item/rooms-category__item.html',{
+      "price":"4000",
+      "class":"Стандарт",
+      "src":"../../img/rooms-category__standart.png",
+      "description":"В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь номера 20-25 кв.м., состоит из гостевой и спальной зоны. ",
+      "href":"#"
+      })
+
+    @@include('blocks/rooms-category__item/rooms-category__item.html',{
+      "price":"4500",
+      "class":"Стандарт +",
+      "src":"../../img/rooms-category__standartpl.png",
+      "description":"В отеле 15 таких номеров. 2-комнатный номер предназначен для проживания 2-4 человек. Площадь номера от 35 кв.м. ",
+      "href":"#"
+      })
+
+      @@include('blocks/rooms-category__item/rooms-category__item.html',{
+      "price":"5700",
+      "class":"Люкс",
+      "src":"../../img/rooms-category__lux.png",
+      "description":"В отеле 5 таких номера. Просторные номера площадью до 40 кв.м. с видом на Финский залив, выполнен в оригинальном cтиле.",
+      "href":"#"
+      })
 
 
   </div>

@@ -2,15 +2,24 @@
 
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 .rooms-category{
+  @media(min-width: @screen-md){
+      .container();
+        }
   &__title{
     text-align: center; 
     margin-top: 50px;
     margin-bottom: 30px;  
   }
-    &__item {
+  &__item {
   background-color: @white;
   border: 1px solid @light-gray;
   margin-bottom: 50px;
+  
+      &-wrap{
+      @media(min-width: @screen-md){
+      margin: 60px;
+        }
+      }
       &-title{
         text-align: center;
         font-size: 26px;  
@@ -43,8 +52,11 @@
       &-text{
         .container();
         margin-bottom: 53px;
+        @media(min-width: @screen-md){
+          padding-left: 171px;
+          padding-right: 170px;
+        }
       }
-      // with flex
       &-btn{
       display: flex;
       flex-direction: column;
@@ -54,6 +66,13 @@
         }
         &--doted{
           margin-bottom: 37px;
+        }
+
+        @media(min-width: @screen-md){
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: 171px;
+          padding-right: 200px;
         }
       }
       
@@ -70,5 +89,5 @@
       //   }
       // }
   }
-
 }
+  
