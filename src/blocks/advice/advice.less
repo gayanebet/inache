@@ -11,17 +11,23 @@
   }
   &__promotion{
 
+
     &--may, &--july{
     background-image: url(../../img/weeretewrt-jpg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 120%;
+
     // height: 299px;
     padding-top: 158px;
     min-width: 320px;
     // min-height: 300px;
     padding-bottom: 20px;
+    @media(min-width: @screen-lg){
+      max-width: 1168px;
+      margin: 0 auto;
+  }
     }
     &-wrap{
       background-color: #fff;

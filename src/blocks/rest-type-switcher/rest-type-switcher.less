@@ -67,9 +67,10 @@
     background-position-y: center;
     @media(min-width: @screen-lg){
       background-size: 100%;
-      min-height: 431px;
+      // max-height: 431px;
       padding-top: 70px;
-  }
+      background-repeat: no-repeat;
+    }
     }
     
 
@@ -115,7 +116,6 @@
   text-decoration: none;
 }
 .rest-type-switcher__options{
-  
   &-title{
     padding-top: 58px;
     margin-bottom: 25px;
@@ -137,26 +137,34 @@
   background-image: url(../img/bgr-under-health.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
-  
+  text-align: center;
   @media(min-width: @screen-sm){
   min-height: 330px;
   }
 }
 
 .rest-type-switcher__options-wrap{
-  text-align: center;
+
   margin-top: 20px;
 }
 
 .rest-type-switcher__options-list{
   display: none;
-
-
   @media(min-width: @screen-md){
   display: flex;
   justify-content: space-between;
   text-align: center;
-  
+  margin-top: 25px;
+  margin-bottom: 100px;
+  }
+  &-wrap{
+  @media(min-width: @screen-lg){
+    width: 800px;
+    // display: block;
+    margin-top: 20px;
+    margin: 0 auto;
+
+  }
   }
 }
 .rest-type-switcher__options-img{

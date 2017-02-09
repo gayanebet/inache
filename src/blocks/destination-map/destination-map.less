@@ -7,10 +7,17 @@
 }
 .destination-map{
   text-align: center;
+  
   &__wrap{
     position: relative;
         padding-left: 40px;
     padding-right: 40px;
+    @media(min-width: @screen-lg){
+    max-width: 490px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 70px;
+    }
   }
   &__description-title{
     padding-top: 74px;
@@ -55,6 +62,9 @@
     display: block;
   }
   &__list{
+    @media(min-width: @screen-sm){
+    text-align-last: left;
+    }
     &--bold{
       font-weight: 500;
       display: inline-block;
